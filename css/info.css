@@ -1,0 +1,309 @@
+#wrap{
+    position: relative;
+    width: 100%;
+}/* 모바일 */
+.menu, .ulsanlogo{
+    display: none;
+}
+#head1{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+.logo a{
+    display: block;
+    width: 170px;
+    height: auto;
+    background-image: url(../Img/logo2.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+.allmenu a{
+    color: #222;
+}
+#head2{
+    display: none;
+}
+.bl_ta{
+    display: none;
+}
+/* 모바일 본문1 */
+#container{
+    text-align: center;
+}
+.m1{
+    margin-bottom: 15px;
+}
+#serach{
+    padding: 5px;
+}
+.serach_btn{
+    margin-top: 1px;
+    padding: 5px;
+    background-color: #0074C8;
+    border-radius: 2px;
+}
+#able{
+    vertical-align: top;
+    margin-top: 3px;
+}
+/* 모바일 본문2 */
+.se1{
+    margin-bottom: 10px;
+}
+.se1 label{
+    margin-right: 5px;
+}
+.m2 div:last-child{
+    margin-bottom: 25px;
+}
+/* 모바일 본문3 */
+.m3 .pc{
+    display: none
+}
+.m3 button{
+    border: 1px solid #222;
+    padding: 5px;
+}
+.m3 div{
+    margin-bottom: 10px;
+}
+.m3 label{
+    display: inline-block;
+    padding: 5px;
+}
+.se2 span{
+    vertical-align: top;
+}
+/* 모바일 푸터 */
+.foot2{
+    background-color: #e4e4e4;
+}
+.f2_in{
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+}
+.f_pc{
+    display: none;
+}
+.f_logo a{
+    display: block;
+    width: 104px;
+    height: 47px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url(../Img/f_copyrightLogo.png);
+    background-position: center;
+    text-indent: -9999px;
+    position: absolute;
+    left: 50%;
+    margin-left: -52px;
+}
+.f2{
+    margin-top: 57px;
+}
+.f2 p{
+    font-size: 12px;
+}
+.copyright{
+    margin-top: 10px;
+}
+
+/* 768px 시작 */
+@media screen and (min-width : 768px){
+    /* 헤더 1 */
+    .logo a{ 
+        width: 227px;
+        height: 60px;
+    }
+    .allmenu span{
+        font-size: 50px;
+    }
+    .more a{
+        padding: 3px;
+        margin-top: 13px;
+        margin-left: 459px;
+    }
+    /* 768 푸터 1 */
+    .foot1{
+        background-color: #a5a5a5;
+    }
+    .f1{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+
+    }
+    .f1 p{
+        text-align: center;
+        margin: 0 20px;
+    }
+    .f1 p a{
+        display: block;
+        width: 150px;
+        font-size: 16px;
+        color: #222;
+    }
+    .f1 .active a{
+        color: #0074C8;
+    }
+    /* 768 푸터 2 */
+    .f_logo a{
+        width: 150px;
+        height: 70px;
+        margin-left: -75px;
+    }
+    .f2{
+        margin-top: 90px;
+    }
+    .f2 p{
+        font-size: 14px;
+    }
+    .address{
+        display: flex;
+        justify-content: center;
+    }
+    .address p{
+        margin: 0 10px;
+    }
+    .law{
+        margin-top: 15px;
+        color: rgb(231, 12, 12);
+    }
+}
+ /* 768px 끝 */
+ /* 1440px 시작 */
+ @media screen and (min-width : 1440px) {
+    #header{
+        width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .allmenu{
+        display: none;
+    }
+    .menu, .ulsanlogo{
+        display: block;
+    }
+    .logo a{
+        width: 270px;
+        height: 60px;
+        background-size: 100% auto;
+        background-position: center;
+    }       
+    .menu{
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .menu p a{
+        font-size: 20px;
+        margin-right: 40px;
+        margin-left: 20px;
+        line-height: 2em;
+        padding: 0 10px;
+    }
+    .menu .my a{
+        background-color: #0074C8;
+        margin-right: 0;
+        padding: 5px 15px;
+        color: #fff;
+        border: 1px solid #0074C8;
+    }
+    .menu .eng a{
+        margin-left: 0;
+        padding: 5px 15px;
+        border: 1px solid #999;
+    }
+    .menu p a{
+        color: #222;
+    }
+    .ulsanlogo a{        
+        display: block;
+        background-image: url(../Img/UlsanBrandSlogan3.png);
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 60px;
+        background-size: 100% auto;
+        text-indent: -9999px;
+    }
+    /* 헤더 2 */
+    #head2{
+        display: block;
+        margin-bottom: 50px;
+    }
+    
+    .gnb ul{
+        display: flex;
+        justify-content: center;
+        padding: 25px 0;
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .gnb li{
+        margin: 0 30px;
+    }
+    .gnb li a{
+        font-size: 18px;
+        color: #222;
+    }
+    
+    /* 1440 푸터 1*/
+    .f1{
+        width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 30px 0;
+    }
+    .f1 p a{
+        font-size: 18px;
+    }
+    /* 1440 푸터 2 */
+    .f_pc{
+        display: block;
+    }
+    .f2_in{
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .f2{
+        margin-top: 0;
+    }
+    .f2 p{
+        font-size: 18px;
+    }
+    .law{
+        margin-top: 25px;
+    }
+    .f_logo a{
+        top: 160px;
+    }
+    .f2_logo{
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .f_ulsanlogo{
+        width: 60px;
+        height: 85px;
+        background-image: url(../Img/f_UlsanBrandSlogan.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        text-indent: -9999px;
+        margin: 0 150px;
+    }
+    .f_qr{
+        width: 70px;
+        height: 70px;
+        background-image: url(../Img/f_qrcode.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        text-indent: -9999px;
+        margin: 0 150px;
+    }
+}

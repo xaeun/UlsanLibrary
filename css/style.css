@@ -1,0 +1,615 @@
+@charset "utf-8";
+#wrap{
+    position: relative;
+    width: 100%;
+}
+/* 모바일 */
+.menu, .ulsanlogo{
+    display: none;
+}
+#head1{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.logo a{
+    display: block;
+    width: 170px;
+    height: auto;
+    background-image: url(../Img/logo2.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+.allmenu a{
+    color: #222;
+}
+#head2{
+    display: none;
+}
+/* 모바일 본문 1 */
+#nav, .radio, .lan{
+    display: none;
+}
+.m1_txt p{
+    display: none;
+}
+.main1{
+    border-top: 1px solid #0074C8;
+    padding-top: 15px;
+    margin-bottom: 30px;
+}
+.m1_title{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.search{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding: 10px;
+    background-color: #dedcdc;
+}
+form{
+    display: flex;
+    justify-content: space-evenly;
+}
+.title{
+    display: flex;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+.title p a{
+    color: #222;
+}
+.s_down a span{
+    margin-top: 2px;
+    margin-left: 5px;
+    font-size: 15px;
+}
+#research{
+    border-color: transparent;
+    border: 1px solid #0074C8;
+}
+.go{
+    color: #fff;
+    padding: 2px 10px 0 10px;
+    background-color: #0074C8;
+}
+.more a{
+    display: block;
+    width: 70px;
+    background-color: #004f88;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    margin: 5px 0 0 222px;
+}
+/* 모바일 본문 2 */
+.bl_ta{
+    display: none;
+}
+.m2_title{
+    margin-bottom: 15px;
+    line-height: 1em;
+    padding-bottom: 5px;
+}
+.m2_title span{
+    font-size: 18px;
+    margin-top: 2px;
+    vertical-align: top;
+}
+.b1{
+    border: 1px dotted #9D9D9D;
+    margin-bottom: 25px;
+    padding: 10px 3px;
+
+}
+.bl_title{
+    margin-bottom: 15px;
+}
+.bl_title a{
+    color:#222;
+    line-height: 1.2em;
+}
+.bl_title span{
+    vertical-align: top;
+    font-size: 18px;
+    margin-top: 1px;
+}
+.bl_in{
+    display: flex;
+}
+.bl_img{
+    margin-right: 15px;
+
+}
+.bl_img img{
+    width: 100%;
+    height: auto;
+    border: 1px solid #d1d1d1;
+}
+
+.bl_txt p{
+    font-size: 12px;
+}
+.bl_active{
+    color: #FF2E00;
+}
+.floor{
+    color: #6A04EB
+}
+/* 모바일 본문 3 */
+.main3{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #d9d9d9;
+    padding: 5px 0;
+    margin-bottom: 30px;
+}
+.who{
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 16px;
+}
+.who span{
+    vertical-align: top;
+    font-size: 20px;
+}
+.whoinfo p{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.whoinfo .active{
+    color: #0074C8;
+}
+/* 모바일 푸터 */
+.foot2{
+    background-color: #e4e4e4;
+}
+.f2_in{
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+}
+.f_pc{
+    display: none;
+}
+.f_logo a{
+    display: block;
+    width: 104px;
+    height: 47px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url(../Img/f_copyrightLogo.png);
+    background-position: center;
+    text-indent: -9999px;
+    position: absolute;
+    left: 50%;
+    margin-left: -52px;
+}
+.f2{
+    margin-top: 57px;
+}
+.f2 p{
+    font-size: 12px;
+}
+.copyright{
+    margin-top: 10px;
+}
+/* 768px 시작 */
+@media screen and (min-width : 768px){
+    /* 헤더 1 */
+    .logo a{ 
+        width: 227px;
+        height: 60px;
+    }
+    .allmenu span{
+        font-size: 50px;
+    }
+    .more a{
+        padding: 3px;
+        margin-top: 13px;
+        margin-left: 459px;
+    }
+    /* 768 본문 1 */
+    .search{
+        width: 550px;
+    }
+    #research{
+        width: 50vw;
+    }
+    /* 768 본문2 booklist */
+    .bl_ta{
+        display: block;
+    }
+    .bl_img{
+        margin-left: 30px;
+    }
+    .b_info{
+        padding-left: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .reser{
+        display: flex;
+    }
+    .reser span{
+        margin: 0 5px;
+    }
+    /* 768 본문3 정보담당자 */
+    .main3{
+        padding: 20px 0;
+    }
+    .who{
+        font-size: 20px;
+    }
+    .whoinfo{
+        display: flex;
+    }
+    .whoinfo p{
+        margin: 0 10px;
+        font-size: 16px;
+    }
+    /* 768 푸터 1 */
+    .foot1{
+        background-color: #a5a5a5;
+    }
+    .f1{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+
+    }
+    .f1 p{
+        text-align: center;
+        margin: 0 20px;
+    }
+    .f1 p a{
+        display: block;
+        width: 150px;
+        font-size: 16px;
+        color: #222;
+    }
+    .f1 .active a{
+        color: #0074C8;
+    }
+    /* 768 푸터 2 */
+    .f_logo a{
+        width: 150px;
+        height: 70px;
+        margin-left: -75px;
+    }
+    .f2{
+        margin-top: 90px;
+    }
+    .f2 p{
+        font-size: 14px;
+    }
+    .address{
+        display: flex;
+        justify-content: center;
+    }
+    .address p{
+        margin: 0 10px;
+    }
+    .law{
+        margin-top: 15px;
+        color: rgb(231, 12, 12);
+    }
+}
+/* 768px 끝 */
+
+@media screen and (min-width : 1440px) {
+    #header{
+        width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .allmenu{
+        display: none;
+    }
+    .menu, .ulsanlogo{
+        display: block;
+    }
+
+    .logo a{
+        width: 270px;
+        height: 60px;
+        background-size: 100% auto;
+        background-position: center;
+    }       
+    .menu{
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .menu p a{
+        font-size: 20px;
+        margin-right: 40px;
+        margin-left: 20px;
+        line-height: 2em;
+        padding: 0 10px;
+    }
+    .menu .my a{
+        background-color: #0074C8;
+        margin-right: 0;
+        padding: 5px 15px;
+        color: #fff;
+        border: 1px solid #0074C8;
+    }
+    .menu .eng a{
+        margin-left: 0;
+        padding: 5px 15px;
+        border: 1px solid #999;
+    }
+    .menu p a{
+        color: #222;
+    }
+    .ulsanlogo a{        
+        display: block;
+        background-image: url(../Img/UlsanBrandSlogan3.png);
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 60px;
+        background-size: 100% auto;
+        text-indent: -9999px;
+    }
+    /* 헤더 2 */
+    #head2{
+        display: block;
+        margin-bottom: 50px;
+    }
+    
+    .gnb ul{
+        display: flex;
+        justify-content: center;
+        padding: 25px 0;
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .gnb li{
+        margin: 0 30px;
+    }
+    .gnb li a{
+        font-size: 18px;
+        color: #222;
+    }
+    /* 메인 */
+    #container{
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* nav */
+    #nav{
+        float: left;
+        display: block;
+        width: 20%;
+        background-color: #d9d9d9;
+    }
+    #nav h1{
+        background-image: url(../Img/leftMenu_titBg.gif);
+        padding: 70px 0;
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+    }
+    #nav li{
+        border-top: 1px solid #888;
+        border-right: 1px solid #888;
+        border-left: 1px solid #888;
+    }
+    #nav li:last-child{
+        border-bottom: 1px solid #888;;
+    }
+    #nav li a{
+        display: block;
+        padding: 15px 0 15px 10px;
+        color: #000;
+        font-size: 20px;
+        position: relative;
+    }
+    #nav li span{
+        font-size: 18px;
+        color: #666;
+        position: absolute;
+        right: 5px;
+    }
+    #nav #active{
+        color: #0074C8;
+    }
+
+    /* 1440 본문1 */
+    #contain{
+        float: right;
+        width: 75%;
+    }
+    .main1{
+        border-top: 0;
+    }
+    .m1_txt p{
+        display: block;
+        margin-top: 10px;
+    }
+    .m1_txt{
+        display: flex;
+        justify-content: space-between;
+    }
+    .m1_title{
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .search{
+        width: 1000px;
+        padding: 46px 20px 20px 20px;
+        position: relative;
+    }
+    .lan{
+        display: block;
+        background-color: darkgreen;
+        color: #fff;
+        font-size: 16px;
+        padding: 5px 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+    .title{
+        margin-right: 30px;
+    }
+    .title p{
+      padding: 5px 10px 0 10px;
+    }
+    .title p a{
+        font-size: 21px;
+    }
+    .title p span{
+        font-size: 21px;
+    }
+    #research{
+        width: 700px;
+        margin-right: 30px;
+        font-size: 21px;
+    }
+    .go{
+        font-size: 21px;
+        padding: 0 20px;
+    }
+    .more{
+        background-color: #671c1c;
+    }
+    .more a{
+        display: block;
+        width: 100px;
+        font-size: 18px;
+        text-align: center;
+        padding: 7px;
+        background-color: #004f88;
+        color: #fff;
+        position: absolute;
+        bottom: 20px;
+        right: 200px;
+    }
+    .radio{
+        display: inline-block;
+        text-align: right;
+        margin-top: 10px;
+        margin-left: 834px;
+        padding: 7px;
+        background-color: #333;
+        color: #fff;
+        font-size: 18px;
+    }
+    /* 1440 메인 2  - booklist*/
+    .m2_title{
+        font-size: 30px;
+    }
+    .m2_title span{
+        font-size: 24px;
+        margin-top: 5px;
+    }
+    .b1{
+        padding: 20px;
+    }
+    .bl_title{
+        font-size: 20px;
+    }
+    .bl_title span{
+        font-size: 24px;
+        margin-top: -2px;
+    }
+    .bl_img{
+        margin-right: 30px;
+    }
+    .bl_txt{
+        margin-bottom: 10px;
+    }
+    .bl_txt p{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .b_info{
+        padding: 0 20px;
+        font-size: 15px;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    /* 1440 메인 3 정보담당자 */
+    .main3{
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+        padding: 30px 0;
+    }
+    .who{
+        font-size: 24px;
+    }
+    .whoinfo p{
+        margin: 0 15px;
+        font-size: 20px;
+    }
+    /* 1440 푸터 1*/
+    .f1{
+        width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 30px 0;
+    }
+    .f1 p a{
+        font-size: 18px;
+    }
+    /* 1440 푸터 2 */
+    .f_pc{
+        display: block;
+    }
+    .f2_in{
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .f2{
+        margin-top: 0;
+    }
+    .f2 p{
+        font-size: 18px;
+    }
+    .law{
+        margin-top: 25px;
+    }
+    .f_logo a{
+        top: 160px;
+    }
+    .f2_logo{
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .f_ulsanlogo{
+        width: 60px;
+        height: 85px;
+        background-image: url(../Img/f_UlsanBrandSlogan.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        text-indent: -9999px;
+        margin: 0 150px;
+    }
+    .f_qr{
+        width: 70px;
+        height: 70px;
+        background-image: url(../Img/f_qrcode.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        text-indent: -9999px;
+        margin: 0 150px;
+    }
+}

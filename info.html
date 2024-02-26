@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세페이지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/info.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div id="head1">
+                <p class="logo"><a href="index.html">로고이미지</a></p>
+                <p class="allmenu"><a href="">
+                    <span class="material-icons">menu</span>
+                </a></p>
+                <div class="menu">
+                    <p><a href="">로그인</a></p>
+                    <p><a href="">울산시민인증</a></p>
+                    <p><a href="">회원가입</a></p>
+                    <p class="my"><a href="">My Library</a></p>
+                    <p class="eng"><a href="">English</a></p>
+                </div>
+                <p class="ulsanlogo"><a href="">울산로고이미지</a></p>
+            </div>
+            <div id="head2">
+                <div class="gnb">
+                    <ul>
+                        <li><a href="index.html">자료검색</a></li>
+                        <li><a href="">서비스</a></li>
+                        <li><a href="">전자도서관</a></li>
+                        <li><a href="">독서문화행사</a></li>
+                        <li><a href="">참여마당</a></li>
+                        <li><a href="">도서관소개</a></li>
+                        <li><a href="">작은도서관</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main id="container">
+            <section class="main1">
+                <div class="m1">
+                    <form>
+                        <input type="text" id="serach" placeholder="검색어를 입력해주세요">
+                        <button class="serach_btn">검색</button>
+                        <div class="able_box">
+                            <input type="checkbox" name="able" id="able">
+                            <label for="checkbox" class="able_la"> 대출 가능한 책만 보기</label>
+                        </div>
+                    </form>
+                </div>
+                <section class="m2">
+                    <div class="se1">
+                        <label for="text">저자</label>
+                        <input type="text">
+                    </div>
+                    <div class="se1">
+                        <label for="text">출판사</label>
+                        <input type="text">
+                    </div>
+                    <div class="se1">
+                        <label for="text">키워드</label>
+                        <input type="text">
+                    </div>
+                    <div class="se1">
+                        <label for="text">ISBN</label>
+                        <input type="text" placeholder="고유도서번호">
+                    </div>
+                </section>
+                <section class="m3">
+                    <div class="se2 mo">
+                        <label for="button">주제</label>
+                        <button>주제를 선택해주세요<span class="material-icons">arrow_drop_down</span></button>
+                    </div>
+                    <div class="se2 pc">
+                        <label for="checkbox">주제</label>
+                        <input type="checkbox" name="" id="subject">철학
+                        <input type="checkbox" name="" id="subject">종교
+                        <input type="checkbox" name="" id="subject">인문사회
+                        <input type="checkbox" name="" id="subject">자연과학
+                        <input type="checkbox" name="" id="subject">사회과학
+                        <input type="checkbox" name="" id="subject">인문사회
+                        <input type="checkbox" name="" id="subject">예술
+                        <input type="checkbox" name="" id="subject">언어
+                        <input type="checkbox" name="" id="subject">문학
+                        <input type="checkbox" name="" id="subject">인문사회역사
+                    </div>
+                    <div class="se2 mo" >
+                        <label for="button">자료실</label>
+                        <button>자료실 위치를 선택해주세요<span class="material-icons">arrow_drop_down</span></button>
+
+                    </div>
+                    <div class="se2 pc">
+                        <label for="checkbox">자료실</label>
+                        <input type="checkbox" name="" id="subject">종합자료실(3층)
+                        <input type="checkbox" name="" id="subject">디지털자료실(1층)
+                        <input type="checkbox" name="" id="subject">연속간행물자료실(1층)
+                        <input type="checkbox" name="" id="subject">장애인자료실(1층)
+                        <input type="checkbox" name="" id="subject">다문화자료(3층)
+                        <input type="checkbox" name="" id="subject">울산지역자료실(3층)
+                        <input type="checkbox" name="" id="subject">청소년자료(3층)
+                        <input type="checkbox" name="" id="subject">영유아자료실(1층)
+                        <input type="checkbox" name="" id="subject">어린이자료실(1층)
+                    </div>
+                    <div class="se2 mo">
+                        <label for="button">도서종류</label>
+                        <button>도서종류를 선택해주세요<span class="material-icons">arrow_drop_down</span></button>
+                    </div>
+                    <div class="se2 pc">
+                        <label for="checkbox">도서종류</label>
+                        <input type="checkbox" name="" id="subject">국내도서
+                        <input type="checkbox" name="" id="subject">외국도서
+                    </div>
+                    <div class="se2 mo">
+                        <label for="button">연령별 추천</label>
+                        <button>연령을 선택해주세요<span class="material-icons">arrow_drop_down</span></button>
+                    </div>
+                    <div class="se2 pc">
+                        <label for="checkbox">연령별 추천</label>
+                        <input type="checkbox" name="" id="subject">10대
+                        <input type="checkbox" name="" id="subject">20대
+                        <input type="checkbox" name="" id="subject">30대
+                        <input type="checkbox" name="" id="subject">40대
+                        <input type="checkbox" name="" id="subject">50대
+                        <input type="checkbox" name="" id="subject">60대
+                        <input type="checkbox" name="" id="subject">70대
+                    </div>
+                    <div class="se2 mo">
+                        <label for="button">베스트대출도서</label>
+                        <button>기간을 선택해주세요<span class="material-icons">arrow_drop_down</span></button>
+                    </div>
+                    <div class="se2 pc">
+                        <label for="checkbox">베스트대출도서</label>
+                        <input type="checkbox" name="" id="subject">종합
+                        <input type="checkbox" name="" id="subject">월별
+                        <input type="checkbox" name="" id="subject">주별
+                        <input type="checkbox" name="" id="subject">스테디
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="foot1">
+                <div class="f1 bl_ta">
+                    <p class="active"><a href="">개인정보처리방침</a></p>
+                    <p><a href="">찾아오시는 길</a></p>
+                    <p><a href="">사이트맵</a></p>
+                </div>
+            </div>
+            <div class="foot2">
+                <div class="f2_in">
+                    <p class="f_logo"><a href="">푸터도서관로고</a></p>
+                    <div class="f2">
+                        <div class="address">
+                            <p class="add">(44762) 울산광역시 남구 꽃대나리로 140(여천동)</p>
+                            <p class="call">대표전화 : 052-266-5670</p>
+                            <p class="fax">FAX : 052-229-6809</p>
+                        </div>
+                        <p class="copyright">Copyright(c) ULSANLIBRARY. All rights reserved.</p>
+                        <p class="law bl_ta">본 홈페이지에 게시된 전자우편주소는 개인정보보호법 및 정보통신망법에 따라 무단 수집을 거부합니다.</p>
+                    </div>
+                    <div class="f2_logo">
+                        <p class="f_qr f_pc">푸터큐알코드</p>
+                        <p class="f_ulsanlogo f_pc">푸터울산로고</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
