@@ -54,13 +54,13 @@ form{
     display: flex;
     justify-content: space-evenly;
 }
-#title{
+.research1{
     display: flex;
     border: 1px solid #222;
     box-sizing: border-box;
     padding-left: 5px;
 }
-#title span a{
+.research1 span a{
     color: #222;
 }
 .s_down a{
@@ -462,17 +462,17 @@ form{
         right: 0;
 
     }
-    #title{
+    .research1{
         margin-right: 30px;
     }
-    #title span{
+    .research1 span{
       padding: 5px 10px 0 10px;
     }
-    #title span a{
+    .research1 span a{
         font-size: 21px;
         color: #000;
     }
-    #title .s_down{
+    .research1 .s_down{
         margin-top: -3px;
     }
     #research{
