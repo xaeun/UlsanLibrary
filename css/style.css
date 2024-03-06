@@ -54,19 +54,20 @@ form{
     display: flex;
     justify-content: space-evenly;
 }
-.title{
+#title{
     display: flex;
     border: 1px solid #222;
     box-sizing: border-box;
     padding-left: 5px;
 }
-.title p a{
+#title span a{
     color: #222;
 }
-.s_down a span{
-    margin-top: 2px;
+.s_down a{
+    display: inline-block;
+    color: #000;
     margin-left: 5px;
-    font-size: 15px;
+    font-size: 25px;
 }
 #research{
     border-color: transparent;
@@ -461,17 +462,18 @@ form{
         right: 0;
 
     }
-    .title{
+    #title{
         margin-right: 30px;
     }
-    .title p{
+    #title span{
       padding: 5px 10px 0 10px;
     }
-    .title p a{
+    #title span a{
         font-size: 21px;
+        color: #000;
     }
-    .title p span{
-        font-size: 21px;
+    #title .s_down{
+        margin-top: -3px;
     }
     #research{
         width: 700px;
